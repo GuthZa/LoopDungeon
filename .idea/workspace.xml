@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7045a7a4-84ff-4e7b-8c6a-2dee4eb52792" name="Changes" comment="First commit, it's still a mess. I will improve every day.">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoopDungeon.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Models/Consumable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Models/GameItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Models/LivingEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Models/Monster.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Models/Player.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Models/Weapon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/engine/Engine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/engine/Main.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2RYRHMWgDRz4e23kYHQhaQ3zTBs" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "D:/VsProjects/Java/Games/Pong",
+    "project.structure.last.edited": "Global Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "configurable.group.build"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\Wisura\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7045a7a4-84ff-4e7b-8c6a-2dee4eb52792" name="Changes" comment="" />
+      <created>1687424942931</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1687424942931</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="First commit, it's still a mess. I will improve every day." />
+    <option name="LAST_COMMIT_MESSAGE" value="First commit, it's still a mess. I will improve every day." />
+  </component>
+</project>
