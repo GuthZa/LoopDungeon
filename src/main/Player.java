@@ -1,4 +1,4 @@
-package Models;
+package main.models;
 
 public class Player extends LivingEntity {
 

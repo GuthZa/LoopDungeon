@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/LoopDungeon.iml" filepath="$PROJECT_DIR$/LoopDungeon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DrantDeepestDungeon.iml" filepath="$PROJECT_DIR$/DrantDeepestDungeon.iml" />
     </modules>
   </component>
 </project>

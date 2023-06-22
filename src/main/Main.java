@@ -1,10 +1,7 @@
 package engine;
 
 
-import Models.GameItem;
-import Models.LivingEntity;
-import Models.Player;
-
+import engine.models.*;
 import javax.swing.*;
 
 public class Main {

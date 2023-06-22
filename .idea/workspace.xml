@@ -5,20 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7045a7a4-84ff-4e7b-8c6a-2dee4eb52792" name="Changes" comment="First commit, it's still a mess. I will improve every day.">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LoopDungeon.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Models/Consumable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Models/GameItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Models/LivingEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Models/Monster.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Models/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Models/Weapon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/engine/Engine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/engine/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LoopDungeon.iml" beforeDir="false" afterPath="$PROJECT_DIR$/DrantDeepestDungeon.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,13 +28,16 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2RYRHMWgDRz4e23kYHQhaQ3zTBs" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "last_opened_file_path": "D:/VsProjects/Java/Games/Pong",
@@ -55,6 +47,21 @@
     "settings.editor.selected.configurable": "configurable.group.build"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="DrantDeepestDungeon" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="DrantDeepestDungeon" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration>C:\Users\Wisura\AppData\Roaming\Subversion</configuration>
@@ -67,9 +74,29 @@
       <option name="presentableId" value="Default" />
       <updated>1687424942931</updated>
     </task>
+    <task id="LOCAL-00001" summary="First commit, it's still a mess. I will improve every day.">
+      <created>1687432852826</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1687432852826</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="First commit, it's still a mess. I will improve every day." />
     <option name="LAST_COMMIT_MESSAGE" value="First commit, it's still a mess. I will improve every day." />
   </component>
