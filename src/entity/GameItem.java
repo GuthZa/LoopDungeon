@@ -1,4 +1,4 @@
-package main.models;
+package entity;
 
 public class GameItem {
     public enum ItemCategory {
@@ -9,8 +9,8 @@ public class GameItem {
 
     public ItemCategory Category;
 
-    String Name;
-    int ItemID;
+    public String Name;
+    public int ItemID;
 
     public GameItem(ItemCategory category, int itemID, String name) {
         this.Category = category;

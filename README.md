@@ -1,4 +1,4 @@
-# DrantDeepestDungeon
+# Drant'sDeepestDungeon
 An experiment to learn Java through programming a game.
 
 Everything is subject to change.
@@ -8,4 +8,5 @@ I might use tips, ideas and code from multiple sources, and will, to best of my 
 
 So far, credito goes to:
 
-Scott Lily - SOSCRPG
+ - Scott Lily - SOSCRPG
+ - RyiSnow - 2D game in Java

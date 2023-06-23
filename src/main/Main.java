@@ -1,25 +1,23 @@
-package engine;
+package main;
 
-
-import engine.models.*;
 import javax.swing.*;
 
 public class Main {
     public static void main(String[] args) {
-        JFrame obj = new JFrame();
-        Engine game = new Engine();
+        JFrame window = new JFrame();
+        window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        window.setResizable(false);
+        window.setTitle("Drant's Deepest Dungeon");
 
+        GamePanel game = new GamePanel();
+        window.add(game);
 
-        obj.setBounds(50, 50, 710, 600);
-        obj.setTitle("Drant Deepest Dungeon");
-        obj.setResizable(false);
-        obj.setVisible(true);
-        obj.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        obj.add(game);
+        window.pack(); //causes the window to fit the preferred size and layout of the subcomponent -> GamePanel
 
-        GameItem item = new GameItem(GameItem.ItemCategory.Consumable, 10, "water");
-        Player entity = new Player("YES", 5, item, 0);
-        System.out.println(entity.getExperiencePoints());
+        game.startGameThread();
+
+        window.setLocationRelativeTo(null);
+        window.setVisible(true);
     }
 
 }

@@ -1,66 +1,52 @@
-package main.models;
+package entity;
+
+import java.awt.image.BufferedImage;
 
 public class LivingEntity {
     protected String name_;
     protected int currentHitPoints_;
     protected int maximumHitPoints_;
 
+    public int x, y;
+    public int speed;
+
+    public BufferedImage up1, up2, down1, down2, left1, left2, right1, right2;
+    public String direction;
+
     protected int level_;
 
-    protected GameItem equippedWeapon_;
-    protected GameItem currentConsumable_;
-
     public boolean isDead = currentHitPoints_ <= 0;
-    public LivingEntity(String name, int maximumHP, GameItem weapon) {
-        this.name_ = name;
-        this.equippedWeapon_ = weapon;
-        this.maximumHitPoints_ = maximumHP;
-        this.currentHitPoints_ = maximumHP;
-        this.level_ = 1;
+    public LivingEntity() {
     }
     //Getters and Setters -----------------------------------------------------------------
-    public String getName_() {
+    public String getName() {
         return this.name_;
     }
-    private void setName_(String name_) {
+    private void setName(String name_) {
         this.name_ = name_;
     }
 
-    public int getMaximumHitPoints_() {
+    public int getMaximumHitPoints() {
         return this.maximumHitPoints_;
     }
-    protected void setMaximumHitPoints_(int maximumHitPoints_) {
+    protected void setMaximumHitPoints(int maximumHitPoints_) {
         this.maximumHitPoints_ = maximumHitPoints_;
     }
-    public int getCurrentHitPoints_() {
+    public int getCurrentHitPoints() {
         return currentHitPoints_;
     }
-    private void setCurrentHitPoints_(int hitPoints) {
+    private void setCurrentHitPoints(int hitPoints) {
         this.currentHitPoints_ = hitPoints;
     }
-    public GameItem getEquippedWeapon_() {
-        return equippedWeapon_;
-    }
-    public void setEquippedWeapon_(GameItem weapon) {
-        this.equippedWeapon_ = weapon;
-    }
 
-    public GameItem getCurrentConsumable_() {
-        return this.currentConsumable_;
-    }
-
-    public void setCurrentConsumable_(GameItem consumable) {
-        this.currentConsumable_ = consumable;
-    }
-
-    public int getLevel_() {
+    public int getLevel() {
         return this.level_;
     }
-    protected void setLevel_(int experiencePoints) {
+    protected void setLevel(int experiencePoints) {
         int originalLevel = level_;
         level_ = (experiencePoints/100) + 1;
         if(level_ !=originalLevel) {
-            setMaximumHitPoints_(level_ * 10);
+            setMaximumHitPoints(level_ * 10);
 
             //Level up!
         }
@@ -78,6 +64,16 @@ public class LivingEntity {
         }
     }
 
+    public void Heal(int hitPointsToHeal) {
+        currentHitPoints_ += hitPointsToHeal;
+        if(currentHitPoints_ > maximumHitPoints_) {
+            currentHitPoints_ = maximumHitPoints_;
+        }
+    }
+
+    public void completelyHeal() {
+        currentHitPoints_ = maximumHitPoints_;
+    }
     //End Methods -----------------------------------------------------------------
 
 }
