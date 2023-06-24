@@ -14,7 +14,6 @@ public class Player extends LivingEntity {
 
     GamePanel gamePanel;
     KeyHandler keyHandler;
-    private int ExperiencePoints;
     public Player(GamePanel gamePanel, KeyHandler keyHandler) {
         this.gamePanel = gamePanel;
         this.keyHandler = keyHandler;
@@ -29,18 +28,30 @@ public class Player extends LivingEntity {
         direction = "down";
     }
     public void update() {
-        if(keyHandler.upPressed) {
-            direction = "up";
-            y -= speed;
-        } else if (keyHandler.downPressed) {
-            direction = "down";
-            y += speed;
-        } else if (keyHandler.rightPressed) {
-            direction = "right";
-            x += speed;
-        } else if (keyHandler.leftPressed) {
-            direction = "left";
-            x-=speed;
+        if(keyHandler.upPressed || keyHandler.downPressed || keyHandler.leftPressed || keyHandler.rightPressed) {
+            if (keyHandler.upPressed) {
+                direction = "up";
+                y -= speed;
+            } else if (keyHandler.downPressed) {
+                direction = "down";
+                y += speed;
+            } else if (keyHandler.rightPressed) {
+                direction = "right";
+                x += speed;
+            } else if(keyHandler.leftPressed){
+                direction = "left";
+                x -= speed;
+            }
+
+            spriteCounter++;
+            if (spriteCounter > 15) {
+                if (spriteNum == 1) {
+                    spriteNum = 2;
+                } else if (spriteNum == 2) {
+                    spriteNum = 1;
+                }
+                spriteCounter = 0;
+            }
         }
     }
 
@@ -51,10 +62,22 @@ public class Player extends LivingEntity {
         BufferedImage image = null;
 
         switch (direction) {
-            case "up" -> image = up1;
-            case "down" -> image = down1;
-            case "right" -> image = right1;
-            case "left" -> image = left1;
+            case "up" -> {
+                if(spriteNum == 1) image = up1;
+                if(spriteNum == 2) image = up2;
+            }
+            case "down" -> {
+                if(spriteNum == 1) image = down1;
+                if(spriteNum == 2) image = down2;
+            }
+            case "right" -> {
+                if(spriteNum == 1) image = right1;
+                if(spriteNum == 2) image = right2;
+            }
+            case "left" -> {
+                if(spriteNum == 1) image = left1;
+                if(spriteNum == 2) image = left2;
+            }
         }
 
         g2.drawImage(image, x, y, gamePanel.tileSize, gamePanel.tileSize, null);
