@@ -5,28 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7045a7a4-84ff-4e7b-8c6a-2dee4eb52792" name="Changes" comment="First commit, it's still a mess. I will improve every day.">
-      <change afterPath="$PROJECT_DIR$/resources/player/boy_down_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/player/boy_down_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/player/boy_left_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/player/boy_left_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/player/boy_right_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/player/boy_right_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/player/boy_up_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/player/boy_up_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Inventory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/GamePanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/KeyHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/maps/map_initial.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/tiles/grass00.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/tiles/grass01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/tiles/wall.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/tiles/water00.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/tiles/water01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tile/Tile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tile/TileManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Consumable.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Engine.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/GameItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/GameItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/LivingEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/LivingEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Monster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Monster.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Weapon.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Inventory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/GameItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/Monster.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/GamePanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +61,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\VsProjects\Java\Games\LoopDungeon\resources\tiles" />
       <recent name="D:\VsProjects\Java\Games\LoopDungeon\resources\player" />
       <recent name="D:\VsProjects\Java\Games\LoopDungeon" />
     </key>
