@@ -5,20 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7045a7a4-84ff-4e7b-8c6a-2dee4eb52792" name="Changes" comment="First commit, it's still a mess. I will improve every day.">
-      <change afterPath="$PROJECT_DIR$/resources/maps/map_initial.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/tiles/grass00.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/tiles/grass01.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/tiles/wall.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/tiles/water00.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/tiles/water01.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tile/Tile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tile/TileManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Inventory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/GameItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/Monster.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/GamePanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/tiles/earth.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/tiles/road00.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/tiles/tree.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tile/TileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tile/TileManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
