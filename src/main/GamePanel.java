@@ -8,6 +8,7 @@ import java.awt.*;
 
 public class GamePanel extends JPanel implements Runnable{
 
+    //Screen Settings
     final int originalTileSize = 16; //Sprite size
     final int scale = 3; //to scale the pixel to the resolution
 
@@ -19,12 +20,19 @@ public class GamePanel extends JPanel implements Runnable{
     public final int screenWidth = tileSize * maxScreenCol; //768 pixels
     public final int screenHeight = tileSize * maxScreenRow; //576 pixels
 
+    //World Settings
+    public final int maxWorldCol = 50;
+    public final int maxWorldRow = 50;
+    public final int worldWidth = tileSize * maxScreenCol;
+    public final int worldHeight = tileSize * maxScreenRow;
+
+    //FPS
     int FPS = 60;
 
     TileManager tileManager = new TileManager(this);
     KeyHandler keyHandler = new KeyHandler();
     Thread gameThread;
-    Player player = new Player(this, keyHandler);
+    public Player player = new Player(this, keyHandler);
 
 
     public GamePanel() {
