@@ -14,10 +14,11 @@ public class Main {
 
         window.pack(); //causes the window to fit the preferred size and layout of the subcomponent -> GamePanel
 
-        game.startGameThread();
-
         window.setLocationRelativeTo(null);
         window.setVisible(true);
+
+        game.setupGame();
+        game.startGameThread();
     }
 
 }

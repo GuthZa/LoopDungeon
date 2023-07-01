@@ -5,12 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7045a7a4-84ff-4e7b-8c6a-2dee4eb52792" name="Changes" comment="First commit, it's still a mess. I will improve every day.">
-      <change afterPath="$PROJECT_DIR$/src/main/CollisionChecker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/objects/boots.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/objects/chest.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/objects/door.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/objects/key.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/AssetSetter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/OBJ_Boots.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/OBJ_Chest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/OBJ_Door.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/OBJ_Key.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/SuperObject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/LivingEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/LivingEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/maps/world01.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/maps/world01.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/GamePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tile/TileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tile/TileManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
