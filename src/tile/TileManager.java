@@ -8,8 +8,8 @@ import java.io.*;
 
 public class TileManager {
     GamePanel gamePanel;
-    Tile[] tile;
-    int[][] mapTileNumber;
+    public Tile[] tile;
+    public int[][] mapTileNumber;
 
     public TileManager(GamePanel gamePanel) {
         this.gamePanel = gamePanel;
@@ -24,14 +24,22 @@ public class TileManager {
         try {
             tile[0] = new Tile();
             tile[0].image = ImageIO.read(new File("resources/tiles/grass01.png"));
+
             tile[1] = new Tile();
             tile[1].image = ImageIO.read(new File("resources/tiles/wall.png"));
+            tile[1].collision = true;
+
             tile[2] = new Tile();
             tile[2].image = ImageIO.read(new File("resources/tiles/water01.png"));
+            tile[2].collision = true;
+
             tile[3] = new Tile();
             tile[3].image = ImageIO.read(new File("resources/tiles/earth.png"));
+
             tile[4] = new Tile();
             tile[4].image = ImageIO.read(new File("resources/tiles/tree.png"));
+            tile[4].collision = true;
+
             tile[5] = new Tile();
             tile[5].image = ImageIO.read(new File("resources/tiles/road00.png"));
 
@@ -89,7 +97,13 @@ public class TileManager {
             int screenX = worldX - gamePanel.player.worldX + gamePanel.player.screenX;
             int screenY = worldY - gamePanel.player.worldY + gamePanel.player.screenY;
 
-            g2.drawImage(tile[tileNum].image, screenX, screenY, gamePanel.tileSize, gamePanel.tileSize, null);
+            if(worldX + gamePanel.tileSize > gamePanel.player.worldX - gamePanel.player.screenX &&
+               worldX - gamePanel.tileSize < gamePanel.player.worldX + gamePanel.player.screenX &&
+               worldY + gamePanel.tileSize > gamePanel.player.worldY - gamePanel.player.screenY &&
+               worldY - gamePanel.tileSize < gamePanel.player.worldY + gamePanel.player.screenY
+            ) {
+                g2.drawImage(tile[tileNum].image, screenX, screenY, gamePanel.tileSize, gamePanel.tileSize, null);
+            }
             worldCol++;
 
             if(worldCol == gamePanel.maxWorldCol) {
