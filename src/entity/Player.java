@@ -85,7 +85,6 @@ public class Player extends LivingEntity {
     public void pickObject(int index) {
         if(index != 999) {
             String objectName = gamePanel.objects[index].name;
-            gamePanel.objects[index] = null;
             switch (objectName) {
                 case "Key" -> {
                     hasKey++;
@@ -95,7 +94,11 @@ public class Player extends LivingEntity {
                         hasKey--;
                     }
                 }
+                case "Boots" -> {
+                    speed += 2;
+                }
             }
+            gamePanel.objects[index] = null;
             System.out.println("Keys " + hasKey);
         }
     }

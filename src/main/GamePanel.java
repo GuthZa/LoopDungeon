@@ -30,13 +30,18 @@ public class GamePanel extends JPanel implements Runnable{
     //FPS
     int FPS = 60;
 
+    //System
     TileManager tileManager = new TileManager(this);
     KeyHandler keyHandler = new KeyHandler();
-    Thread gameThread;
+    Sound sound = new Sound();
     public CollisionChecker collisionChecker = new CollisionChecker(this);
     public AssetSetter assetSetter = new AssetSetter(this);
+    Thread gameThread;
+
+    //Entities and objects
     public Player player = new Player(this, keyHandler);
     public SuperObject[] objects = new SuperObject[10];
+
 
 
 
@@ -106,7 +111,6 @@ public class GamePanel extends JPanel implements Runnable{
         tileManager.draw(g2);
         player.draw(g2);
 
-        
         for (SuperObject object : objects) {
             if (object != null) {
                 object.draw(g2, this);

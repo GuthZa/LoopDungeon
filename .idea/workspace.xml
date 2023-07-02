@@ -5,9 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7045a7a4-84ff-4e7b-8c6a-2dee4eb52792" name="Changes" comment="First commit, it's still a mess. I will improve every day.">
+      <change afterPath="$PROJECT_DIR$/resources/sound/BlueBoyAdventure.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/sound/coin.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/sound/fanfare.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/sound/powerup.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/sound/unlock.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Sound.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/entity/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/CollisionChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/CollisionChecker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/AssetSetter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/AssetSetter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/GamePanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,10 +57,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\VsProjects\Java\Games\LoopDungeon\resources\sound" />
+      <recent name="D:\VsProjects\Java\Games\LoopDungeon\src\sound" />
       <recent name="D:\VsProjects\Java\Games\LoopDungeon\resources\maps" />
       <recent name="D:\VsProjects\Java\Games\LoopDungeon\resources\tiles" />
       <recent name="D:\VsProjects\Java\Games\LoopDungeon\resources\player" />
-      <recent name="D:\VsProjects\Java\Games\LoopDungeon" />
     </key>
   </component>
   <component name="RunManager">
