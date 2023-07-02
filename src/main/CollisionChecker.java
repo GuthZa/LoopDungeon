@@ -1,6 +1,7 @@
 package main;
 
 import entity.LivingEntity;
+import objects.SuperObject;
 
 public class CollisionChecker {
 
@@ -56,5 +57,41 @@ public class CollisionChecker {
                 }
             }
         }
+    }
+
+    public int checkObject(LivingEntity entity, boolean player) {
+        int index = 999;
+
+        for(SuperObject object : gamePanel.objects) {
+            if(object != null) {
+
+                //Get entity's solid area position
+                entity.solidArea.x = entity.worldX + entity.solidArea.x;
+                entity.solidArea.y = entity.worldY + entity.solidArea.y;
+                //get the objects solid area position
+                object.solidArea.x = object.worldX + object.solidArea.x;
+                object.solidArea.y = object.worldY + object.solidArea.y;
+
+                switch (entity.direction) {
+                    case "up" -> {
+                        entity.solidArea.y -= entity.speed;
+                        if(entity.solidArea.intersects(object.solidArea)) {
+
+                        }
+                    }
+                    case "down" -> {
+                        entity.solidArea.y += entity.speed;
+                    }
+                    case "left" -> {
+                        entity.solidArea.x -= entity.speed;
+                    }
+                    case "right" -> {
+                        entity.solidArea.x += entity.speed;
+                    }
+                }
+            }
+        }
+
+        return index;
     }
 }

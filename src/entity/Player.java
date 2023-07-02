@@ -25,6 +25,10 @@ public class Player extends LivingEntity {
         screenY = gamePanel.screenHeight / 2 - (gamePanel.tileSize / 2);
 
         solidArea = new Rectangle(8, 16, 32, 32);
+        solidAreaDefaultX = solidArea.x;
+        solidAreaDefaultY = solidArea.y;
+
+
         setDefaultValues();
         getPlayerImage();
     }
