@@ -60,7 +60,7 @@ public class CollisionChecker {
     }
 
     public int checkObject(LivingEntity entity, boolean player) {
-        int index = 999;
+        int index = 999, i = 0;
 
         for(SuperObject object : gamePanel.objects) {
             if(object != null) {
@@ -76,20 +76,56 @@ public class CollisionChecker {
                     case "up" -> {
                         entity.solidArea.y -= entity.speed;
                         if(entity.solidArea.intersects(object.solidArea)) {
-
+                            if(object.collision) {
+                                entity.collisionOn = true;
+                            }
+                            if(player) {
+                                index = i;
+                            }
                         }
                     }
                     case "down" -> {
                         entity.solidArea.y += entity.speed;
+                        if(entity.solidArea.intersects(object.solidArea)) {
+                            if(object.collision) {
+                                entity.collisionOn = true;
+                            }
+                            if(player) {
+                                index = i;
+                            }
+                        }
                     }
                     case "left" -> {
                         entity.solidArea.x -= entity.speed;
+                        if(entity.solidArea.intersects(object.solidArea)) {
+                            if(object.collision) {
+                                entity.collisionOn = true;
+                            }
+                            if(player) {
+                                index = i;
+                            }
+                        }
                     }
                     case "right" -> {
                         entity.solidArea.x += entity.speed;
+                        if(entity.solidArea.intersects(object.solidArea)) {
+                            if(object.collision) {
+                                entity.collisionOn = true;
+                            }
+                            if(player) {
+                                index = i;
+                            }
+                        }
                     }
                 }
+                //Reset entity solid area check
+                entity.solidArea.x = entity.solidAreaDefaultX;
+                entity.solidArea.y = entity.solidAreaDefaultY;
+                //Reset object solid area check
+                object.solidArea.x = object.solidAreaDefaultX;
+                object.solidArea.y = object.solidAreaDefaultY;
             }
+            i++;
         }
 
         return index;

@@ -16,6 +16,7 @@ public class Player extends LivingEntity {
 
     public final int screenX;
     public final int screenY;
+    int hasKey = 0;
 
     public Player(GamePanel gamePanel, KeyHandler keyHandler) {
         this.gamePanel = gamePanel;
@@ -55,6 +56,10 @@ public class Player extends LivingEntity {
             collisionOn = false;
             gamePanel.collisionChecker.checkTile(this);
 
+            //check player collision with object
+            int objIndex =  gamePanel.collisionChecker.checkObject(this, true);
+            pickObject(objIndex);
+
             //if collision is false player can move
             if(!collisionOn) {
                 switch (direction) {
@@ -74,6 +79,24 @@ public class Player extends LivingEntity {
                 }
                 spriteCounter = 0;
             }
+        }
+    }
+
+    public void pickObject(int index) {
+        if(index != 999) {
+            String objectName = gamePanel.objects[index].name;
+            gamePanel.objects[index] = null;
+            switch (objectName) {
+                case "Key" -> {
+                    hasKey++;
+                }
+                case "Door" -> {
+                    if(hasKey > 0) {
+                        hasKey--;
+                    }
+                }
+            }
+            System.out.println("Keys " + hasKey);
         }
     }
 
